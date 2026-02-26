@@ -1,8 +1,8 @@
-package org.acme.repository;
+package ${package}.repository;
 
 import io.quarkus.hibernate.orm.panache.PanacheRepository;
 import jakarta.enterprise.context.ApplicationScoped;
-import org.acme.repository.model.MessageEntity;
+import ${package}.repository.model.MessageEntity;
 
 import java.util.List;
 

@@ -1,7 +1,7 @@
-package org.acme.resource.mapper;
+package ${package}.resource.mapper;
 
-import org.acme.repository.model.MessageEntity;
-import org.acme.resource.dto.MessageDto;
+import ${package}.repository.model.MessageEntity;
+import ${package}.resource.dto.MessageDto;
 import org.mapstruct.Mapper;
 
 import java.util.List;

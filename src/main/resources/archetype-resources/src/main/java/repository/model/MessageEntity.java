@@ -1,9 +1,8 @@
-package org.acme.repository.model;
+package ${package}.repository.model;
 
+import lombok.Data;
 import jakarta.persistence.*;
 import lombok.Data;
-
-import java.math.BigDecimal;
 
 @Data
 @Entity

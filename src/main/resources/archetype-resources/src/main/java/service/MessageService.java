@@ -1,9 +1,9 @@
-package org.acme.service;
+package ${package}.service;
 
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
-import org.acme.repository.MessageRepository;
-import org.acme.repository.model.MessageEntity;
+import ${package}.repository.MessageRepository;
+import ${package}.repository.model.MessageEntity;
 
 import java.util.List;
 
