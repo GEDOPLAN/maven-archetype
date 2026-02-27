@@ -1,4 +1,4 @@
-package ${package}.repository.model;
+package de.gedoplan.repository.model;
 
 import lombok.Data;
 import jakarta.persistence.*;

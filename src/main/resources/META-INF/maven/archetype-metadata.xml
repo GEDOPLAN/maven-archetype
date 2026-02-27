@@ -5,6 +5,7 @@
                       xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0 http://maven.apache.org/xsd/archetype-descriptor-1.0.0.xsd"
                       name="${artifactId}">
     <requiredProperties>
+        <!--        mit default          -->
         <requiredProperty key="jdbcKind">
             <defaultValue>h2</defaultValue>
         </requiredProperty>
@@ -14,19 +15,22 @@
         <requiredProperty key="dbMigrationFolder">
             <defaultValue>db</defaultValue>
         </requiredProperty>
+        <!--        ohne default          -->
         <requiredProperty key="jdbcUser"/>
         <requiredProperty key="jdbcPassword"/>
         <requiredProperty key="messages"/>
     </requiredProperties>
     <fileSets>
+        <!--
+         filtered = Verarbeitung der Variablen
+         packaged = Ordner in diesem Pfad werden automatisch in die definierten Packages abgelegt
+                    (Variable: package, z.B. de.gedoplan)
+         -->
         <fileSet filtered="true" packaged="true">
             <directory>src/main/java</directory>
         </fileSet>
         <fileSet filtered="true">
             <directory>src/main/resources</directory>
-        </fileSet>
-        <fileSet filtered="true" packaged="true">
-            <directory>src/test/java</directory>
         </fileSet>
     </fileSets>
 </archetype-descriptor>
